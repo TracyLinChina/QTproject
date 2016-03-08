@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="DrawShape">
+    <file>images/DrawAngle.png</file>
+    <file>images/DrawCircle.png</file>
+    <file>images/DrawLine.png</file>
+    <file>images/DrawPolygon.png</file>
+    <file>images/DrawRectangle.png</file>
+  </qresource>
+  <qresource prefix="Mouse">
+    <file>images/SetMouse.jpg</file>
+  </qresource>
+</RCC>

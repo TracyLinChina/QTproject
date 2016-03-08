@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="open">
+    <file>images/open.png</file>
+  </qresource>
+  <qresource prefix="DrawShape">
+    <file>images/DrawAngle.png</file>
+    <file>images/DrawPolygon.png</file>
+    <file>images/DrawRectangle.png</file>
+    <file>images/DrawCircle.png</file>
+    <file>images/DrawLine.png</file>
+  </qresource>
+  <qresource prefix="Mouse">
+    <file>images/new.png</file>
+    <file>images/save.png</file>
+    <file>images/SetMouse.jpg</file>
+  </qresource>
+</RCC>

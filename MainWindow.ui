@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mainwin</class>
+ <widget class="QMainWindow" name="Mainwin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">selection-color: rgb(255, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="acOpen"/>
+    <addaction name="ac_New"/>
+    <addaction name="ac_Save"/>
+    <addaction name="acImage"/>
+    <addaction name="acSaveImage"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="acDrawLine"/>
+    <addaction name="acDrawCircle"/>
+    <addaction name="acDrawRectange"/>
+    <addaction name="acDrawPolygon"/>
+    <addaction name="acDrawAngle"/>
+    <addaction name="acSelect"/>
+    <addaction name="acSet_color"/>
+    <addaction name="acSet_Width"/>
+    <addaction name="acDelete"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>感觉加了好看一点</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="acOpen"/>
+   <addaction name="ac_Save"/>
+   <addaction name="ac_New"/>
+   <addaction name="separator"/>
+   <addaction name="acSelect"/>
+   <addaction name="separator"/>
+   <addaction name="acDrawLine"/>
+   <addaction name="acDrawCircle"/>
+   <addaction name="acDrawRectange"/>
+   <addaction name="acDrawPolygon"/>
+   <addaction name="acDrawAngle"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="acOpen">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/open/images/open.png</normaloff>:/open/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="acDrawLine">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/DrawShape/images/DrawLine.png</normaloff>:/DrawShape/images/DrawLine.png</iconset>
+   </property>
+   <property name="text">
+    <string>DrawLine</string>
+   </property>
+  </action>
+  <action name="acDrawCircle">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/DrawShape/images/DrawCircle.png</normaloff>:/DrawShape/images/DrawCircle.png</iconset>
+   </property>
+   <property name="text">
+    <string>DrawCircle</string>
+   </property>
+  </action>
+  <action name="acDrawRectange">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/DrawShape/images/DrawRectangle.png</normaloff>:/DrawShape/images/DrawRectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>DrawRectange</string>
+   </property>
+  </action>
+  <action name="acSelect">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/Mouse/images/SetMouse.jpg</normaloff>:/Mouse/images/SetMouse.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Select(&amp;M)</string>
+   </property>
+  </action>
+  <action name="acSet_color">
+   <property name="text">
+    <string>Set color(&amp;C)</string>
+   </property>
+  </action>
+  <action name="acDrawPolygon">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/DrawShape/images/DrawPolygon.png</normaloff>:/DrawShape/images/DrawPolygon.png</iconset>
+   </property>
+   <property name="text">
+    <string>DrawPolygon</string>
+   </property>
+  </action>
+  <action name="acDrawAngle">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/DrawShape/images/DrawAngle.png</normaloff>:/DrawShape/images/DrawAngle.png</iconset>
+   </property>
+   <property name="text">
+    <string>DrawAngle</string>
+   </property>
+  </action>
+  <action name="ac_New">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/Mouse/images/new.png</normaloff>:/Mouse/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+  </action>
+  <action name="ac_Save">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/Mouse/images/save.png</normaloff>:/Mouse/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+  </action>
+  <action name="acSet_Width">
+   <property name="text">
+    <string>Set Width</string>
+   </property>
+  </action>
+  <action name="acImage">
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+  </action>
+  <action name="acDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="acSaveImage">
+   <property name="text">
+    <string>保存图片</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>恩很有道理</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
